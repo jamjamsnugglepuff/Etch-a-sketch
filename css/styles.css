@@ -1,5 +1,6 @@
 #grid-container{
     height: 800px;
+    width: 800px;
     background-color: black;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
