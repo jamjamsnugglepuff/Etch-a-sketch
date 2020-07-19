@@ -1,0 +1,41 @@
+#grid-container{
+    height: 800px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    
+}
+
+.grid-item{
+    
+    
+    border-style: solid;
+    border-color: green;
+    border-width: 1px;
+    background-color: red;
+    transition: all .7s;
+}
+
+.active{
+    background-color: purple;
+}
+/*
+.grid-item:hover{
+    background-color: purple;
+}
+*/
+#button-container{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+#reset-button{
+    padding: 10px;
+    font-size: 1.5em;
+}
+.hover{
+    background-color: orange;
+}
