@@ -10,15 +10,19 @@ createDivs = (x = 16) => {
 
 
     }
+    
 }
 
 //calling function that create's the divs
 createDivs();
-const squares = document.querySelectorAll('.grid-item');
-let div = document.createElement('div');
 
 
+hoverEffects();
 //hover over div
+function hoverEffects(){
+    const squares = document.querySelectorAll('.grid-item');
+let div = document.createElement('div');
+    console.log('hover effects called!');
 squares.forEach((squares) => {
     squares.addEventListener('mouseover', (e) => {
         // this.classList.add('active');
@@ -35,6 +39,7 @@ squares.forEach( square=> {
     });
 
 });
+}
 //reset button (reset's div and get new values for new div)
 rstButton.addEventListener('click', () => {
 const squares = document.querySelectorAll('.grid-item');
@@ -55,4 +60,5 @@ for (i = squares.length; i > 0; i--) {
     }
     
     newGrid();
+    hoverEffects();
 });
